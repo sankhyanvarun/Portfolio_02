@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a common stylesheet -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Attractive font style */
+            margin: 0;
+            padding: 0;
+            background: url('noise.png'), #121212; /* Noise background with dark color */
+            color: #e0e0e0; /* Light text color for contrast */
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(30, 30, 30, 0.9); /* Darker background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-section h2 {
+            text-align: center;
+            color: #FF5733; /* Accent color */
+            font-weight: bold;
+        }
+
+        .about-section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .dynamic-content {
+            font-style: italic;
+            color: #b0b0b0; /* Slightly lighter for emphasis */
+        }
+
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FF5733; /* Accent color */
+        }
+
+        .skills {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            background-color: #FF5733; /* Accent color */
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #FF5733; /* Accent color */
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #c70039; /* Hover color */
+        }
+
+        .update-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #FF5733; /* Accent color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .update-btn:hover {
+            background-color: #c70039; /* Hover color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about-section">
+        <h2>About Me</h2>
+        <img src="me.png" alt="Profile Picture" class="profile-image">
+        <p>Hello! I am <span id="name">[Your Name]</span>, a passionate developer and designer. I specialize in creating dynamic web applications and developing machine learning models that solve real-world problems.</p>
+        <p class="dynamic-content" id="dynamicContent">I am always exploring new technologies and love taking on challenging projects that push my limits.</p>
+        <div class="skills">
+            <h4>Skills</h4>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">Data Analysis</span>
+        </div>
+        <div class="social-links">
+            <h4>Connect with me</h4>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="mailto:yourname@example.com">Email</a>
+        </div>
+        <div class="update-btn">
+            <!-- <h4>Connect with me</h4> -->
+            <a href ="projects.html">Projects</a>
+            <a href ="contact.html">contact</a>
+            <a href ="index.html">Home</a>
+        </div>
+    </div>
+
+    <script>
+        function updateContent() {
+            const nameElement = document.getElementById('name');
+            const dynamicContentElement = document.getElementById('dynamicContent');
+
+            // Replace with dynamic data fetching or updates as needed
+            nameElement.textContent = 'Varun Sankhyan';
+            dynamicContentElement.textContent = 'Currently, I am focusing on building innovative solutions using AI and ML, enhancing user experiences, and driving digital transformation.';
+        }
+    </script>
+</body>
+
+</html>
